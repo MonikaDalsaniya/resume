@@ -26,8 +26,8 @@ jobs:
         with:
           name: PDF
           path: |
-            Sr_Firmware_Engineer_Parth_Sanepara.pdf
-            CoverLetter_Parth_Sanepara.pdf
+            resume.pdf
+            CoverLetter.pdf
 
       - name: Commit build outputs
         run: |
