@@ -1,0 +1,8 @@
+{
+    "name": "LaTeX Build Environment",
+    "image": "ghcr.io/xu-cheng/texlive-full:latest", 
+    "forwardPorts": [], // Add any ports you need to forward
+    "extensions": [
+        "james-yu.latex-workshop" // Or your preferred LaTeX extension
+    ]
+}

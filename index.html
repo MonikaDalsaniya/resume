@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport for responsive design -->
+    <title>Parth Sanepara - Resume</title>
+    <style>
+        /* Ensure the html and body take full height and remove any margin or padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4; /* Light background for better contrast */
+        }
+
+        /* Style for the body to limit width */
+        body {
+            max-width: width;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        iframe {
+            width: 100%; /* Use 80% of available width */
+            height: 100%;
+            border: none; /* Remove border */
+            display: block; /*Ensure it's treated as a block element */
+            max-width: width; /* Set a maximum width */
+            min-width: 300px; /*Reduced minimum width for smaller screens */
+        }
+
+        /* Fallback message for browsers that don't support iframes */
+        .no-support {
+            display: none;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        iframe:invalid + .no-support {
+            display: block;
+        }
+
+        /* Responsive handling */
+        @media (max-width: 600px) {
+            iframe {
+                width: 100%; /* Full width on small devices */
+                min-width: unset; /* Allow iframe to shrink on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PDF viewer in an iframe -->
+    <!-- <iframe src="Sr_Firmware_Engineer_Parth_Sanepara.pdf" type="application/pdf"></iframe> -->
+    <iframe src="resume.pdf" type="application/pdf"></iframe>
+
+    <!-- Fallback message for unsupported browsers -->
+    <div class="no-support">
+        <p>It looks like your browser doesn't support viewing PDFs. You can download the resume <a href="resume.pdf" download>here</a>.</p>
+    </div>
+</body>
+</html>
