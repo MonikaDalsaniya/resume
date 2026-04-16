@@ -1,0 +1,193 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%--------- Define variables------------
+\newcommand{\HiringManager}{Parth}
+\newcommand{\CompanyName}{HPRS}
+\newcommand{\Position}{Sr. Embedded Software Engineer}
+
+\newcommand{\CurrentCompany}{Thingularity}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeCertificateBody}[4]{%
+  \item {#1} - 
+  \ifstrempty{#2}{% If URL is empty, don't create a link
+    #3 
+  }{% If URL is provided, create a link
+    \href{#2}{\underline{\color{blue} #3}}%
+  }
+  \hfill \textit{\small #4}%
+  \vspace{-0.2cm}  % Adjust this value as needed
+} 
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% \vspace{4cm}
+
+\begin{center}
+    \textbf{\Huge \scshape Parth Sanepara} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:9687119944}{+919687119944}
+    $|$
+    \faEnvelope \hspace{.5pt} \href{mailto:parthsanepara@gmail.com}{parthsanepara@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/parthsanepara}{parthsanepara}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/parthsanepara}{parthsanepara}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/cc5ibm6jAiXmRFp17}{Bengaluru, Karnataka-India}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+    \textbf{\Large \scshape Cover Letter} \\ \vspace{3pt}
+\end{center}
+
+\vspace{2cm}
+
+  Dear \HiringManager{},\\ \vspace{3pt}
+
+  I am writing to express my strong interest in the \textbf{\Position{}} position at \textbf{\CompanyName{}}, 
+  as advertised on [Platform where you saw the job posting]. With over 5 years of experience in designing, developing,
+  and testing embedded systems and IoT solutions, I am confident that my skills and expertise align perfectly with the 
+  requirements of this role. \\ \vspace{3pt}
+
+  Throughout my career, I have consistently demonstrated a strong aptitude for firmware development across a range of 
+  wireless and wired technologies, including BLE, Wi-Fi, Ethernet, and Cellular IoT. I am proficient in RTOS programming 
+  (Zephyr, FreeRTOS), low-power device development, and cloud integration using AWS IoT Core. My experience with ARM-based MCUs, 
+  communication protocols (TCP/IP, MODBUS, MQTT), and embedded software debugging has equipped me with a comprehensive 
+  understanding of the embedded systems landscape. \\ \vspace{3pt}
+
+  In my current role at \CurrentCompany{}, I am actively involved in the "Arçelik Digital Home Energy" project, collaborating with 
+  DAI-Labor at the Technical University of Berlin. This project has allowed me to gain valuable experience in simulating data 
+  exchange processes using the EEBUS protocol suite and migrating frameworks between different programming languages to ensure 
+  future adaptability. \\ \vspace{3pt}
+
+  I am particularly drawn to \CompanyName{}'s commitment to [Mention something specific about the company that resonates with you, 
+  e.g., innovation in the IoT space, focus on sustainability, etc.]. I believe my passion for embedded systems and my proven track 
+  record in delivering high-quality firmware solutions would make me a valuable asset to your team. \\ \vspace{3pt}
+
+  I am eager to learn more about this opportunity and discuss how my skills and experience can contribute to \CompanyName{}'s success. 
+  Thank you for your time and consideration.
+
+\vspace{3cm}
+
+
+  Sincerely,
+
+  Parth Sanepara
+
+
+%   [Optional: Add a sentence or two about your specific interest in the company or the project you're applying for.]
+
+%   [Optional: Include a link to your online portfolio or GitHub profile if relevant.]
+
+\end{document}

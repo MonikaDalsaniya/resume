@@ -1,0 +1,41 @@
+name: Build LaTeX document
+
+on:
+  workflow_dispatch: {}  # Simple manual trigger without inputs
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compile Resume LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            resume.tex
+            CoverLetter.tex
+  
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF
+          path: |
+            Sr_Firmware_Engineer_Parth_Sanepara.pdf
+            CoverLetter_Parth_Sanepara.pdf
+
+      - name: Commit build outputs
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add *.pdf
+          git commit -m "release: Auto-commit build output"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
